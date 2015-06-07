@@ -1,0 +1,26 @@
+****************************************
+* LAYOUT *
+
+There are the standard commands
+	\chapter#1#2
+	\section#1#2
+	\subsection#1#2
+where the first arg is some kind of
+numbering thing, and the second arg
+is supposed to be the title.
+
+Automatic numbering is implemented.
+For this, use the commands
+	\nchapter#1
+	\nsection#1
+	\nsubsection#1
+
+PROPOSAL: In the future, use some
+global value
+	\numberingON ???
+to switch between the two with
+one change. Then we can eliminate
+the whole \n... buisness. Plus
+the current math enviornments
+require numbering, so this problem
+can be fixed as well.

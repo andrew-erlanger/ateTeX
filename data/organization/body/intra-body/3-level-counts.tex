@@ -1,0 +1,13 @@
+\newcount\chapterno
+\chapterno=-1
+
+\newcount\sectionno
+
+\newcount\subsectionno
+
+\newcount\blockno
+
+%\def\curBlockRef{\the\chapterno.\the\sectionno.\the\subsectionno.\the\blockno}
+
+% a block ref which ignores subsections
+\def\curBlockRef{\the\chapterno.\the\sectionno.\the\blockno}

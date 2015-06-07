@@ -1,0 +1,27 @@
+% ****************************************
+% Integration
+% ****************************************
+
+% [s01] Integrals
+% [s02] Differential Forms
+
+% ****************************************
+% [s01] Integrals
+\def\oneint#1#2{
+	\int_#1^#2
+}
+\def\twoint#1#2#3#4{
+	\int_{#1}^{#2} \! \int_{#3}^{#4}
+}
+\def\threeint#1#2#3#4#5#6{
+	\int_{#1}^{#2} \! \int_{#3}^{#4}
+	\! \int_{#5}^{#6}
+}
+
+% ****************************************
+% [s02] Differential Forms
+\def\oneform#1{\, d#1}
+\def\twoform#1#2{\, d#1d#2}
+\def\threeform#1#2#3{\, d#1d#2d#3}
+\def\twowedge#1#2{\, d#1 \wedge d#2}
+\def\threewedge#1#2#3{\, d#1 \wedge d#2 \wedge d#3}

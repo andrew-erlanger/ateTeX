@@ -1,0 +1,7 @@
+\def\subsectionInit#1{
+	% count stuff
+	\advance\subsectionno by 1
+	\blockno=0
+	% make toc entry
+	\writenumberedtocentry{subsection}{#1}{\the\subsectionno}
+}

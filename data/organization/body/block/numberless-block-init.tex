@@ -1,0 +1,15 @@
+\def\beginBlock#1#2{
+	\par\nobreak\begingroup
+	{\scshapex #1\rm\ #2.}
+	\nobreak
+}
+\def\endBlock{
+	\endgroup
+}
+% first arg is begin command
+% second arg is end command
+% third arg is block type
+\def\newBlockType#1#2#3{
+	\def#1{\beginBlock{#3}}
+	\def#2{\endBlock}
+}

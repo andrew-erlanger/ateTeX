@@ -1,0 +1,8 @@
+\def\sectionInit#1{
+	% deal with count stuff
+	\advance\sectionno by 1
+	\subsectionno=0
+	\blockno=0
+	% make a toc entry
+	\writenumberedtocentry{section}{#1}{\the\sectionno}
+}

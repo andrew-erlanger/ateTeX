@@ -1,0 +1,14 @@
+\definecontentsfile{tof}
+
+\newcount\figureno
+
+\def\writeTOF{
+	\begingroup
+	\parskip=0pt
+	\baselineskip=1.3\baselineskip
+	{\hfill \chapterFont Table of Figures}
+	\chapterSpace
+	\readtoffile
+	\vfill\eject
+	\endgroup
+}

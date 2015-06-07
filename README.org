@@ -1,0 +1,11 @@
+* Andrew Erlanger's Tex (ateTeX)
+** Abstract
+   This is Andrew Erlanger's personal TeX
+   macro suite.
+** Goals
+*** Minimalism
+    No outside libraries.
+*** Transparency
+    Well-documented text-file options management.
+*** Leverage
+    Object-oriented code for maximum impact.

@@ -1,0 +1,41 @@
+\def\NEC{\mathop{\square}}
+\def\POS{\mathop{\lozenge}}
+
+\def\domain{\mathop{\hbox{\rm dom}}}
+\def\range{\mathop{\hbox{\rm ran}}}
+\def\field{\mathop{\hbox{\rm fld}}}
+
+\def\MP#1#2{\text{\rm $#1$,$#2$, MP}}
+\def\PL#1{\text{PL}_{#1}}
+\def\implies{\rightarrow}
+\def\IMPLIES{\rightarrow}
+
+\def\({\left( }
+\def\[{\left[ }
+\def\){\right) }
+\def\]{\right] }
+
+\def\valid{\vdash}
+\def\theorem{\models}
+
+\def\THE{\mathop{\iota}}
+\def\Nec{\mathop{\hbox{\rm nec}}}
+
+\def\Cfactual#1#2{\fntype{#1}{\rTo^\square}{#2}}
+
+\def\PLone#1#2{#1 \implies
+	\left( #2 \implies #1 \right)}
+\def\PLtwo#1#2#3{\left( #1 \implies \left(
+	#2 \implies #3 \right) \right) \implies
+	\left( \left( #1 \implies #2 \right) \implies
+	\left( #1 \implies #3 \right) \right)}
+\def\PLthree#1#2{\left( \NOT #1 \implies
+	\NOT #2 \right) \implies \left( \left(
+	\NOT #1 \implies #2 \right) \implies #1 \right)}
+
+\def\worlds{{\cal W}}
+\def\access{{\cal R}}
+\def\eval{\hbox{\rm V}}
+\def\interp{{\cal I}}
+
+\def\proofLine#1#2#3{#1.&\quad && #2 \quad &\text{#3}&\\}

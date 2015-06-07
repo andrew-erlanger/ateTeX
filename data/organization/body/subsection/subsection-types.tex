@@ -1,0 +1,13 @@
+\def\subsection#1{
+	\subsectionInit{#1}
+	\par
+	\noindent {\bf \the\chapterno.\the\sectionno.\the\subsectionno \quad #1} \par
+	\nobreak
+}
+\def\circleSubsection#1{ 
+	\subsectionInit{#1}
+	\medskip
+	\noindent {$\circ$ {\bf #1.}}
+	\nobreak
+}
+

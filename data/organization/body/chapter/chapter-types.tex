@@ -1,0 +1,16 @@
+\def\chapter#1{
+	\chapterInit{#1}
+	{\chapterNumberFont \the\chapterno \hfill \chapterFont \quad #1}
+	\chapterSpace
+	\nobreak
+}
+\def\smallChapter#1{
+	\chapterInit{#1}
+	\vskip 1cm
+	{\subtitlerm \the\chapterno \quad #1}
+	\vskip 1cm
+	\nobreak
+}
+\def\titleSpace{{\vskip 3cm}}
+\def\titleNumberFont{\titlerm}
+\def\titleFont{\subtitlerm}

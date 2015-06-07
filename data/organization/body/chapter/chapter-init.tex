@@ -1,0 +1,13 @@
+\newif\iffChapter
+\def\chapterInit#1{
+	% deal with numbering
+	\advance\chapterno by 1
+	\sectionno=0
+	\subsectionno=0
+	\blockno=0
+        % indicate this is a new chapter page
+        \global\fChaptertrue
+	% write a toc entry
+	\writenumberedtocentry{chapter}{#1}{\the\chapterno}
+}
+

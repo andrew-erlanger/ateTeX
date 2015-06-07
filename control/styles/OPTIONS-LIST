@@ -1,0 +1,47 @@
+% ****************************************
+% *** LIST OF OPTIONS ***
+% ****************************************
+
+THIS IS NOT A FILE TO BE LOADED BY TEX.
+THIS IS A LIST OF ALL POSSIBLE OPTIONS
+AND DESCRIPTIONS OF THOSE OPTIONS.
+SOME OPTIONS CONFLICT, SO ATTEMPTING TO
+LOAD THEM ALL WILL RESULT IN WEIRD
+BEHAIVOR AND POSSIBLY FAILURE TO COMPILE.
+
+\def\loadOption #1{\input $TEX_MACROS/options/#1}
+
+\loadOption third-party/third-party-all
+
+\loadOption typography/font/font-all
+
+\loadOption typography/spacing/spacing-all
+
+\loadOption typography/visuals/commutative-diagrams
+
+%\loadOption typography/visuals/images
+
+\loadOption typography/symbols/math/math-symbols-all
+
+\loadOption typography/symbols/thesis/thesis-symbols-all
+
+
+\loadOption organization/table-of-contents/toc-all
+
+\loadOption organization/cross-referencing/cross-reference
+
+\loadOption organization/bibliography/enable-bibliography
+
+\loadOption organization/body/count-levels/3-level-count
+
+\loadOption organization/body/chapter/enable-chapters
+
+\loadOption organization/body/section/enable-sections
+
+\loadOption organization/body/subsection/enable-subsections
+
+\loadOption organization/body/block/numbered-blocks
+
+\loadOption organization/body/block/all-block-types
+
+\loadOption organization/index/load-indexing

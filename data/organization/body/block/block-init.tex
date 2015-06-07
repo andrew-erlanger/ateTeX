@@ -1,0 +1,18 @@
+\def\beginBlock#1{
+	\advance\blockno by 1
+	\par\noindent\begingroup
+	%\parskip=ipt
+	{\curBlockRef \ \ \scshapex #1.}
+	\nobreak
+}
+\def\endBlock{
+	%\bigskip
+	\endgroup
+}
+% first arg is begin command
+% second arg is end command
+% third arg is block type
+\def\newBlockType#1#2#3{
+	\def#1{\beginBlock{#3}}
+	\def#2{\endBlock}
+}

@@ -1,0 +1,44 @@
+% for including graphics
+% first arg is number
+% second arg is file
+% third arg is caption
+% FINAL VERSION
+\def\FINALinsertPDFimage#1#2#3{
+        \vbox{\nopagebreak
+        \vskip 1cm
+        \pdfximage width 384pt {#1}
+        \hbox{\pdfrefximage\pdflastximage}
+        \vbox{Figure \the\chapterno.\the\sectionno.#2. #3}
+        \writenumberedtofentry{figure}{#2}{\the\sectionno}
+        \vskip 0.3cm}
+}
+% and old version
+\def\OLDinsertPDFimage#1#2#3{
+        \pdfximage{#2}
+        \pdfrefximage\pdflastximage
+        \vskip -3cm
+        {\scshapex Figure #1}.
+        {\rm #3}
+}
+% the current thing
+\def\insertPDFimage#1#2#{
+        {\parskip=0pt
+        \vskip 1cm
+        {\scshapex Figure \the\chapterno.\the\figureno}\par
+        \pdfximage width 384pt {#1}
+        \hbox{\pdfrefximage\pdflastximage}
+        {#2}
+        \writenumberedtofentry{figure}{#1}{\the\sectionno}
+        %\advance\figureno by 1
+        \vskip 0.3cm}
+}
+\def\EXPERIMENTALinsertPDFimage#1#2{
+        \beginFigure
+        {\rm #2}
+        \vskip 0.3cm
+        
+        \pdfximage{#1}
+        \pdfrefximage\pdflastximage
+
+        \endFigure
+}

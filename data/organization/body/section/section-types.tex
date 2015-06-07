@@ -1,0 +1,21 @@
+\def\section#1{
+        \vfill\eject
+	\sectionInit{#1}
+	%\vskip 1cm
+	{\twelverm {\subtitlerm \the\chapterno.\the\sectionno}
+	\hfill #1} 
+	\vskip 1cm
+	\nobreak
+}
+\def\boldSection#1{
+	\sectionInit{#1}
+	\vskip 0.5cm
+	\noindent {\bf \the\chapterno.\the\sectionno \quad #1} \vskip 0.5cm
+	\nobreak
+}
+\def\stdSection#1{
+	\sectionInit{#1}
+	\vskip 1cm
+	{\twelverm \the\chapterno.\the\sectionno \quad #1} \vskip 1cm
+	\nobreak
+}
