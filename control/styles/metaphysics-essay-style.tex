@@ -1,0 +1,39 @@
+% ****************************************
+% *** ATETEX MODAL LOGIC STYLE ***
+% ****************************************
+
+\def\loadOption #1{\input $ATETEX/control/options/#1}
+
+\loadOption third-party/third-party-all
+
+\loadOption typography/font/font-all
+\twelverm
+
+% spacing options
+\loadOption typography/spacing/below-display-space-toggle
+\def\myparskip{24pt}
+\parindent=0pt
+\parskip=\myparskip
+\baselineskip=2\baselineskip
+\advanceleftmargin by 1cm
+\advancerightmargin by 1cm
+\raggedright
+
+% proper title
+\loadOption typography/title/smaller-title
+\def\printTitle{
+        \vskip 1in
+        \centerline{\scshapexii \mytitle} \par
+        \centerline{\myauthor} \par
+        \centerline{\mylocation}
+}
+
+\loadOption typography/visuals/commutative-diagrams
+
+\loadOption typography/symbols/math/math-symbols-all
+
+\loadOption typography/symbols/philosophy/modal-symbols
+
+\loadOption organization/body/block/numberless-blocks
+
+\loadOption organization/body/block/all-block-types
